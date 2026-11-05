@@ -1,0 +1,7 @@
+table {
+  font-size: 0.9rem;
+}
+th,
+td {
+  padding-right: 1.5rem !important;
+}

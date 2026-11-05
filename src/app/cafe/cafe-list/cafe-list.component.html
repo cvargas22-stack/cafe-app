@@ -1,1 +1,25 @@
-<p>cafe-list works!</p>
+<div class="container-fluid px-0">
+  <table class="table w-auto">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Región</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (cafe of cafes; track cafe.id) {
+        <tr>
+          <th scope="row">{{ cafe.id }}</th>
+          <td>{{ cafe.nombre }}</td>
+          <td>{{ cafe.tipo }}</td>
+          <td>{{ cafe.region }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+
+  <p class="mb-0">Total café de origen: {{ totalOrigen }}</p>
+  <p>Total café blend: {{ totalBlend }}</p>
+</div>
